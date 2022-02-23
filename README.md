@@ -1,9 +1,8 @@
 # React | Contact-App
-![GOMCAM-20220223_1428580414](https://user-images.githubusercontent.com/87071421/155313190-aa16b7fa-c9b3-463b-93eb-482943836e31.gif)
 
 [Contacts App](https://contactappreact.netlify.app/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4449460b-72f4-45b4-a715-d00610a221f8/deploy-status)](https://app.netlify.com/sites/focused-mestorf-7fb214/deploys)
+![GOMCAM-20220223_1428580414](https://user-images.githubusercontent.com/87071421/155313190-aa16b7fa-c9b3-463b-93eb-482943836e31.gif)
 
 # Getting Started with Create React App
 
