@@ -7,12 +7,12 @@ function List({ contacts }) {
   const [filterText, setFilterText] = useState("")
 
   // filter her döndüğünde array'in her bir elemanını bize vericek //
-  // object.keys = fullname ve phonenumber'ı ayırır //
+  // Object.keys = fullname ve phonenumber'ı ayırır //
   // some = herhangi biri eğer şarta uyuyorsa o kaydı gösterir //
   // includes = filtertext value'nin içinde var mı yok mu? // 
-  const filtered = contacts.filter((item) => {
+  const filtered = contacts.filter((item) => { // array'in her bir elemanı
     return Object.keys(item).some((key) =>
-      item[key]
+      item[key] // item.fullname ya da item.phone_number gibi...
         .toString()
         .toLowerCase()
         .includes(filterText.toLowerCase())
