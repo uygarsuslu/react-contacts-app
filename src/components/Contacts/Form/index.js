@@ -4,7 +4,7 @@ import { useState, /*useEffect*/ } from 'react'
 // form'a yeni bilgi eklendikten sonra input'ların içini temizlerken kısayol olsun diye ekledik //
 const initialFormValues = { fullname: "", phone_number: "" }
 
-// addContact yazarak sayfayı yenilediğim anda o atama işlemini yapacak olan fonksiyonu aldık //
+// addContact yazarak sayfaya yeni kayıt eklediğim anda o atama işlemini yapacak olan fonksiyonu aldık //
 // contacts yazarak eski verilerin üstüne ekleme yapmayı sağlarız //
 function Form({ addContact, contacts }) {
     const [form, setForm] = useState(initialFormValues)
@@ -22,7 +22,7 @@ function Form({ addContact, contacts }) {
 
     // butona bastığımız anda ne olacak //
     const onSubmit = (e) => {
-        // varsayılanı engelle //
+        // sayfa yenilenmesini engeller //
         e.preventDefault()
 
         //form'a değer girilmezse gönderme //
@@ -42,7 +42,7 @@ function Form({ addContact, contacts }) {
 
     return (
 
-        // form'da sayfa yenilenme işlemi olur //
+        // form'da sayfa yenilenme işlemi olur bunu durdurmak için onSubmit'te "preventDefault" methodunu uygularız //
         <form onSubmit={onSubmit}>
 
             <div>
